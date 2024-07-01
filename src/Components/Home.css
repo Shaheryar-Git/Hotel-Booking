@@ -1,0 +1,42 @@
+.h1{
+    margin-right: 60% !important;
+}
+
+
+.featured{
+    position: relative;
+}
+
+
+.imgs{
+    border: 2px solid black !important;
+    width: 400px;
+    position: relative;
+}
+
+
+.featured img{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.titles{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 5;
+    height: 92%;
+    padding: 20px; 
+    width: 94%;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.featured:hover .titles{
+    opacity: 1; 
+}
+
+

@@ -1,0 +1,89 @@
+
+
+.container2 {
+    max-width: 450px;
+    margin: 70px auto; 
+    padding: 50px;
+    /* background-color: #060606; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    background-size: cover; 
+    background-position: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.underline {
+    display: block;
+    width: 140px;
+    height: 2px;
+    background-color: #333;
+    margin: 10px auto; 
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input input {
+    width: calc(100% - 30px); 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Increased border-radius for rounded corners */
+    outline: none;
+    transition: border-color 0.3s ease; /* Added transition effect */
+}
+
+.input input:focus {
+    border-color: #007bff; /* Highlight border color on focus */
+}
+
+.input i {
+    position: absolute;
+    top: 50%;
+    left: 15px; /* Adjusted icon position */
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.submit {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px; /* Increased border-radius for rounded buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition effect */
+}
+
+button:hover {
+    filter: brightness(90%); /* Slightly darken button on hover */
+}
+
+.Sign-In {
+    background-color: #007bff; /* Changed color to match the "Log-In" button */
+    color: #fff;
+}
+
+.Log-In {
+    background-color: #dc3545; /* Changed color to match the "Sign-In" button */
+    color: #fff;
+}
