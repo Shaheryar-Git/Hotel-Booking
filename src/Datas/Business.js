@@ -3,20 +3,20 @@ const businessRoom = [
       id: 14,
       title: 'Executive Suite Room',
       price: "14,000",
-      image: "/Assets/imageBuiness/bed-4416515_1280.jpg"
+      image: "/Assets/bedroom-1285156_1280.jpg"
     },
     {
       id:15,
       title: 'Professional Pad Room',
       price: "14,000",
-      image: "/Assets/imageBuiness/bedroom-1285156_1280.jpg",
+      image: "/Assets/bedroom-6577523_1280.jpg",
      
     },
     {
       id: 16,
       title: 'Corporate Comfort Room',
       price:" 14,000",
-      image: "/Assets/imageBuiness/bedroom-3475656_1280 (1).jpg",
+      image: "/Assets/bed-4416515_1280.jpg",
       category: "WOMENS PRODUCTS"
     },
     {

@@ -4,9 +4,20 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/actions/action";
 import Navbar from "./Navbar";
 import SideBar from "./SideBar";
+import { useParams } from "react-router-dom";
+import economyRoom from "../Datas/Economy";
 
 const Detailpage = () => {
 
+  let { roomId } = useParams();
+
+  console.log(roomId , "ROOM ID");
+
+  let room = economyRoom.find((ele) => ele.id.toString() === roomId);
+
+  console.log(typeof(id));
+
+  console.log(room,"room");
 
  let dispatch = useDispatch()
 
@@ -51,7 +62,7 @@ const Detailpage = () => {
                     {/* Slide 1 */}
                     <div className="item active">
                       <img
-                        src="/Assets/24trending-shophotels1-superJumbo.jpg"
+                        src={room.image}
                         height={500}
                         width={600}
                         className="img-responsive"

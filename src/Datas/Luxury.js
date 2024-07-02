@@ -3,71 +3,71 @@ const LuxuryRoom = [
       id: 23,
       title: 'Imperial GoldSuite Room',
       price: "18,000",
-      image: ""
+      image: "/imgesLuxury/14b73252e3cf32d1e231f89ed86da5d1.jpg"
     },
     {
       id:24,
       title: 'Royal Retreat Room',
       price: "18,000",
-      image: "/Assets/images (17).jpg",
+      image: "/imgesLuxury/7104fa72abf60a2ac65197fd4437574d.jpg",
       category: "WOMENS PRODUCTS"
     },
     {
       id: 25,
       title: 'Presidential Suite Room',
       price:" 18,000",
-      image: "/Assets/images (18).jpg",
+      image: "/imgesLuxury/14b73252e3cf32d1e231f89ed86da5d1.jpg",
       category: "WOMENS PRODUCTS"
     },
     {
       id: 26,
       title: "Grand Palace Room",
       price:" 18,000",
-      image: "/Assets/il_fullxfull.3518088952_f82j.jpg",
+      image: "/imgesLuxury/images (6).jpeg",
       category: "WOMENS PRODUCTS"
     },
     {
       id: 27,
       title: "Elite Haven Room",
       price: "18,000",
-      image: "/Assets/mockup-63363b1a.webp",
+      image: "/imgesLuxury/bedroom-6778193_1280.jpg",
       category: "WOMENS PRODUCTS"
     },
     {
       id: 28,
       title: 'Luxe Lounge Room',
       price: "18,000",
-      image: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      image: "/imgesLuxury/bedroom-6686058_1280.jpg",
       "category": "WOMENS PRODUCTS"
     },
     {
       id: 29,
       title: 'The Penthouse Room',
       price: "18,000",
-      image: "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+      image: "/imgesLuxury/bedroom-416062_1280.jpg",
       category: "WOMENS PRODUCTS"
     },
     {
       id: 30,
       title: 'Prestige Suite Room',
       price:" 18,000",
-      image: "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+      image: "/imgesLuxury/14b73252e3cf32d1e231f89ed86da5d1.jpg",
       category: "WOMENS PRODUCTS"
     },
     {
       id: 31,
       title: "Grandiose Getaway Room",
       price:" 18,000",
-      image: "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+      image: "/imgesLuxury/images (6).jpeg",
       category: "WOMENS PRODUCTS"
     },
-    {
-      id: 32,
-      title: "Luxe Lavish Room",
-      price: "18,000",
-      image: "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
-      category: "WOMENS PRODUCTS"
-    },
+    // {
+    //   id: 32,
+    //   title: "Luxe Lavish Room",
+    //   price: "18,000",
+    //   image: "Assets/imageBuiness/bedroom-7132435_1280.jpg",
+    //   category: "WOMENS PRODUCTS"
+    // },
  
   ];
   

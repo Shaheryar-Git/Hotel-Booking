@@ -16,7 +16,7 @@ const Business = () => {
       <div className="card-body">
         <h5 className="card-title mt-3">{ele.price}</h5>
         <p className="card-text">{ele.title}</p>
-        <Link to={`/business/:roomId2`} className="btn btn-dark fw-bold fs-5">Details</Link>
+        <Link to={`/Business/${ele.id}`} className="btn btn-dark fw-bold fs-5">Details</Link>
       </div>
     </div>
       </div>

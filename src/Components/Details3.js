@@ -2,10 +2,21 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../redux/actions/action'
 import Navbar from './Navbar'
+import { useParams } from 'react-router-dom'
+import LuxuryRoom from '../Datas/Luxury'
+
 
 const Detail3 = () => {
 
+  let { roomId } = useParams();
 
+  console.log(roomId , "ROOM ID");
+
+  let room = LuxuryRoom.find((ele) => ele.id.toString() === roomId);
+
+  console.log(typeof(id));
+
+  console.log(room,"room");
  const dispatch = useDispatch()
 
 
@@ -45,7 +56,7 @@ const Detail3 = () => {
                     {/* Slide 1 */}
                     <div className="item active">
                       <img
-                        src="/Assets/70a8ab5aa285df3fa6c8b95d497dadcd.jpg"
+                        src={room.image}
                         height={500}
                         className="img-responsive"
                         alt

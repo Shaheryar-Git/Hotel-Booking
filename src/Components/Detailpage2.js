@@ -3,13 +3,16 @@ import { useSelector,useDispatch } from 'react-redux'
 import { addToCart } from '../redux/actions/action'
 import { cartReducers } from '../redux/reducers/reducer';
 import Navbar from './Navbar';
+import { useParams } from 'react-router-dom';
+import businessRoom from '../Datas/Business';
  
 
 
 
 const Detailpage2 = () => {
 
-
+let { roomsId } = useParams()
+let rooms = businessRoom.find((ele) => ele.id === roomsId)
 
 let dispatch = useDispatch();
 
@@ -52,7 +55,7 @@ const bookRoom = (e) =>{
                     {/* Slide 1 */}
                     <div className="item active">
                       <img
-                        src="/Assets/download (2).jpeg"
+                        src={rooms.image}
                         height={500}
                         width={500}
                         className="img-responsive"

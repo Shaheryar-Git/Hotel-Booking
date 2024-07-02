@@ -17,7 +17,7 @@ const Economy = () => {
                        <div className="card-body">
                          <h5 className="card-title ">{ele.price}</h5>
                          <p className="card-text">{ele.title}</p>
-                         <Link to={`/economy/:roomId`} className="btn btn-dark fw-bold fs-5">Details</Link>
+                         <Link to={`/economy/${ele.id}`} className="btn btn-dark fw-bold fs-5">Details</Link>
                        </div>
                      </div>
                        </div>

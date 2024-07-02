@@ -6,7 +6,7 @@ const economyRoom = [
       image: "/Assets/Images/pexels-fotoaibe-1743231.jpg"
     },
     {
-      id:2,
+      id: 2,
       title: 'Budget Bliss Room',
       price: "10,000",
       image: "/Assets/Images/pexels-pixabay-210265.jpg",
