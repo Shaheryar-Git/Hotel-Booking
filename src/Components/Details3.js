@@ -8,13 +8,13 @@ import LuxuryRoom from '../Datas/Luxury'
 
 const Detail3 = () => {
 
-  let { roomId } = useParams();
+  let {roomId3} = useParams();
 
-  console.log(roomId , "ROOM ID");
+  // console.log(params , "ROOM ID");
 
-  let room = LuxuryRoom.find((ele) => ele.id.toString() === roomId);
+  let room = LuxuryRoom.find((ele) => ele.id.toString() === roomId3);
 
-  console.log(typeof(id));
+
 
   console.log(room,"room");
  const dispatch = useDispatch()

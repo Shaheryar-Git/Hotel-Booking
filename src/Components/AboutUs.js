@@ -9,6 +9,7 @@ const AboutUs = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-4 ">
+
             <img src="/Assets/jim-oddo.jpg" height={300} />
           </div>
           <div className="col-sm-12 col-md-12 col-lg-8 ">

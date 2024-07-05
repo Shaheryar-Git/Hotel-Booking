@@ -12,12 +12,12 @@ const Detailpage = () => {
   let { roomId } = useParams();
 
   console.log(roomId , "ROOM ID");
-
+  
   let room = economyRoom.find((ele) => ele.id.toString() === roomId);
-
-  console.log(typeof(id));
-
+  
+  
   console.log(room,"room");
+  
 
  let dispatch = useDispatch()
 

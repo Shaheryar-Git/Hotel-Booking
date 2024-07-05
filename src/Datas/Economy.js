@@ -10,7 +10,7 @@ const economyRoom = [
       title: 'Budget Bliss Room',
       price: "10,000",
       image: "/Assets/Images/pexels-pixabay-210265.jpg",
-      category: "WOMENS PRODUCTS"
+     
     },
     {
       id: 3,

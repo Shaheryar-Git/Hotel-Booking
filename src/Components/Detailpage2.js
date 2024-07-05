@@ -1,33 +1,41 @@
-import React from 'react'
-import { useSelector,useDispatch } from 'react-redux'
-import { addToCart } from '../redux/actions/action'
-import { cartReducers } from '../redux/reducers/reducer';
-import Navbar from './Navbar';
-import { useParams } from 'react-router-dom';
-import businessRoom from '../Datas/Business';
- 
+import React from "react";
+import "./Detail.css";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../redux/actions/action";
+import Navbar from "./Navbar";
+import SideBar from "./SideBar";
+import { useParams } from "react-router-dom";
+import businessRoom from "../Datas/Business";
 
 
+const Detailpage = () => {
 
-const Detailpage2 = () => {
+  let  {roomId2} = useParams();
 
-let { roomsId } = useParams()
-let rooms = businessRoom.find((ele) => ele.id === roomsId)
+  console.log("params.....1", roomId2);
+  console.log("businessRoom........1", businessRoom)
+  
+  let room = businessRoom.find((ele) => ele.id.toString() === roomId2);
+  
+  
+  console.log("room....1", room);
 
-let dispatch = useDispatch();
+ let dispatch = useDispatch()
 
-// const added = useSelector((state)=> state.cartReducers.carts)
+//  const added = useSelector((state)=> state.cartReducers.carts)
+//  console.log(added,"DONE");
 
-
-const bookRoom = (e) =>{
+ const bookRoom = (e) =>{
   dispatch(addToCart(e))
-}
+ }
+
 
 
   return (
     <div>
       {/* <Navbar/> */}
-      <div className="container mt-5  ms-5" style={{width:"1300px"}}>
+      <SideBar />
+      <div className="container mt-5 ms-5">
         {/* product */}
         <div className="product-content product-wrap clearfix product-deatil">
           <div className="row">
@@ -55,11 +63,12 @@ const bookRoom = (e) =>{
                     {/* Slide 1 */}
                     <div className="item active">
                       <img
-                        src={rooms.image}
+                        src={room.image}
                         height={500}
-                        width={500}
+                        width={600}
                         className="img-responsive"
                         alt
+                        // style={{overflow:"auto"}}
                       />
                     </div>
                   </div>
@@ -131,7 +140,7 @@ const bookRoom = (e) =>{
                     className="btn btn-dark btn-lg"
                     onClick={bookRoom}
                   >
-                    Book Now (Rs :14,000)
+                    Book Now (Rs :10,000)
                   </button>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6">
@@ -148,7 +157,7 @@ const bookRoom = (e) =>{
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Detailpage2
+export default Detailpage;
